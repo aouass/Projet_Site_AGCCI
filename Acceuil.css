@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("Frame 9.png");
+    background-size: cover;        /* couvre tout l’écran */
+    background-position: center;   /* centre l’image */
+    background-repeat: no-repeat;  /* pas de répétition */
+
+    /* background: linear-gradient(to top, #202056 5%, #0397D6 63%, #B3E0F3 89%, #FFFFFF 100%); */
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.btn-contact {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* HERO */
+.hero {
+    background: url('hero.jpg') no-repeat center/cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.hero .overlay {
+    max-width: 600px;
+    margin: auto;
+}
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.stat-card {
+    background: white;
+    color: black;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* BENEFICIAIRES */
+ .temoignages, .partenaires {
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+.beneficiaires, .projets{
+    padding: 50px 20px;
+    text-align: center;
+    color: black;
+}
+.carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.img-placeholder {
+    background: #ccc;
+    height: 150px;
+    border-radius: 10px;
+}
+.btn-primary {
+    background: #007bff;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* PARTENAIRES */
+.logos img {
+    height: 80px;
+    margin: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: white;
+    position: relative;
+    padding-top: 0;
+}
+svg {
+  display: block;
+  transform: rotate(180deg)  scaleX(-1);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+}
+
+.footer-logos img {
+  height: 100px;
+  margin: 5px;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 5px;
+}
+
+.footer-links h3 {
+  color: #1c1c50;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #1c1c50;
+}
+
+.footer-search {
+  display: flex;
+  align-items: center;
+  background: #dcdcdc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.footer-search input {
+  border: none;
+  background: transparent;
+  padding: 8px;
+  outline: none;
+}
+
+.footer-search button {
+  border: none;
+  background: transparent;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  margin: 10px 0;
+}
