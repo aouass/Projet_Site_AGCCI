@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGCCI Mali</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="accueil">
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/Logo_SiteAGCCI.png" alt="Logo AGCCI">
+            </div>
+            <ul class="menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#beneficiaires">Bénéficiaire</a></li>
+                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+            </ul>
+
+            <a href="contact.html">
+                <button class="contact-btn">Contactez-nous</button>
+            </a> <!-- Lien vers la page de contact -->
+
+        </nav>
+    </header>
+
+    <!-- Section Statistiques -->
+    <section id="statistiques">
+        <div class="stats-container">
+            <div class="text-overlay">
+                <h1>Notre Impact en Chiffres</h1>
+                <p>Découvrez l'impact de l'initiative AGCCI qui s'engage activement pour l'autonomisation des jeunes filles africaines dans le domaine des technologies et du codage. Ces statistiques témoignent des progrès accomplis et de notre engagement à combler le fossé numérique.</p>
+
+                <div class="stats">
+                    <div class="stat">
+                        <i class="fas fa-user-graduate"></i> <!-- Icône Cohorts -->
+                        <h2>04</h2>
+                        <p>Cohorts</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-code"></i> <!-- Icône Filles Formées -->
+                        <h2>200</h2>
+                        <p>Filles Formées</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-project-diagram"></i> <!-- Icône Projets -->
+                        <h2>54</h2>
+                        <p>Projets</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section description du projet AGCCI -->
+    <section id="agcci-description">
+        <div class="description-container">
+            <h3>AGCCI - African Girls Can Code Initiative</h3>
+            <p>AGCCI, ou "African Girls Can Code Initiative", est une initiative de l'ONU Femmes et de l'Union Africaine, en collaboration avec l'Union Internationale des Télécommunications (UIT), visant à former et autonomiser les jeunes filles africaines dans le domaine des technologies de l'information et de la communication (TIC) et du codage. L'initiative cherche à combler le fossé numérique entre les genres en Afrique et à encourager les jeunes filles à envisager des carrières dans les TIC.</p>
+        </div>
+    </section>
+
+    <!-- Section Bénéficiaires -->
+    <section id="beneficiaires">
+        <h2>Nos Bénéficiaires
+
+            <span class="carousel-nav left" onclick="moveCarousel(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="carousel-nav right" onclick="moveCarousel(1)">
+                <i class="fas fa-chevron-right"></i>
+            </span>
+
+        </h2>
+        <div class="beneficiaries">
+            <!-- Carrousel de bénéficiaires -->
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <div class="card">
+                        <img src="images/benef_1.jpg" alt="Aoua sow">
+                        <h4>Aoua Sow</h4>
+                        <p>Bénéficiaire</p>
+                        <span><b>2023</b></span>
+                    </div>
+                    <div class="card">
+                        <img src="images/Benef_3.jpg" alt="Mah sanogo">
+                        <h4>Mah Rokiatou Dite Koyan Sanogo</h4>
+                        <p>Bénéficiaire</p>
+                        <span><b>2023</b></span>
+                    </div>
+                    <div class="card">
+                        <img src="images/Benef_2.jpg" alt="Aminata Teguete">
+                        <h4>Aminata Teguete</h4>
+                        <p>Bénéficiaire</p>
+                        <span><b>2023</b></span>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/Benef_1.jpg" alt="Lalla Camara">
+                        <h4>Lalla Camara</h4>
+                        <p>Bénéficiaire</p>
+                        <span><b>2023</b></span>
+                    </div>
+                    <div class="card">
+                        <img src="images/benef_3.jpg" alt="Fatoumata Coulibaly">
+                        <h4>Fatoumata Coulibaly</h4>
+                        <p>Bénéficiaire</p>
+                        <span><b>2025</b></span>
+                    </div>
+                    <div class="card">
+                        <img src="images/benef_2.jpg" alt="Rokiatou Toure">
+                        <h4>Rokiatou Toure</h4>
+                        <p>Bénéficiaire</p>
+                        <span><b>2025</b></span>
+                    </div>
+                
+                </div>
+
+            </div>
+            
+        </div>
+        <button class="voir-plusBtn">Voir Plus</button>
+    </section>
+    
+
+     <!-- Section Projets Réalisés -->
+     <section id="projets">
+        <h2>Projets Réalisés</h2>
+        <div class="projects">
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-text">
+                        <h5>Application Mobile pour l'Autonomisation des Femmes</h5>
+                        <p><strong>Porteuse Projet :</strong> Aoua Sow</p>
+                        <p>Développement d'une application mobile pour permettre aux femmes rurales d'accéder à des ressources éducatives et à des services de microfinance, renforçant ainsi leur autonomie.</p>
+                        <button class="btn-savoir-plus">Savoir Plus</button>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/project_1.png" alt="Application Mobile Autonomisation">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-text">
+                        <h5>Plateforme d'Apprentissage en Ligne pour les Filles en Afrique</h5>
+                        <p><strong>Porteuse Projet :</strong> Mah Rokiatou Sanogo</p>
+                        <p>Création d'une plateforme d'apprentissage en ligne axée sur les compétences numériques, permettant aux filles africaines de développer des compétences en codage et en entrepreneuriat.</p>
+                        <button class="btn-savoir-plus">Savoir Plus</button>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/project_2.png" alt="Plateforme d'Apprentissage">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-text">
+                        <h5>Innovation en Énergie Solaire pour les Communautés Rurales</h5>
+                        <p><strong>Porteuse Projet :</strong> Aminata Teguete</p>
+                        <p>Installation de panneaux solaires dans les villages isolés pour fournir de l'énergie durable aux maisons, écoles et cliniques locales.</p>
+                        <button class="btn-savoir-plus">Savoir Plus</button>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/project_1.png" alt="Énergie Solaire">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+    </section>
+
+    <!-- Section Témoignages -->
+    <section id="temoignages">
+        <h2>Témoignages</h2>
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <p>"Ut enim ad minim veniam..."</p>
+                <span>Nom Prenom - Statut</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"Duis aute irure dolor..."</p>
+                <span>Nom Prenom - Statut</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Partenaires -->
+    <section id="partenaires">
+        <h2>Nos Partenaires</h2>
+        <div class="partners">
+            <img src="images/Logo ONUFEMME.png" alt="ONU Femmes">
+            <img src="images/agetic logo 1.png" alt="AGETIC">
+            <img src="images/Orange Digital Center Logo 1.png" alt="Orange Digital Center">
+            <img src="images/AGCCI_Logo 2.png " alt="AGCCI_Logo2">
+            <img src="images/Union Africaine 1.png" alt="Union Africaine">
+            <img src="images/ITU_logo 1.png" alt="ITU_logo">
+
+        </div>
+    </section>
+
+    <!-- SVG pour la forme ondulée -->
+    <div class="wave">
+        <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#fff" d="M0,0 C480,150 960,0 1440,150 L1440,0 L0,0 Z"></path>
+        </svg>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer content -->
+        <div class="footer-content">
+            <!-- Contenu du Footer -->
+            <ul>
+                <li>
+                    <div class="footer-logo">
+                        <img src="images/Logo_AGCCI_footer.png" alt="AGCCI Logo">
+                        <img src="images/Logo UNW_CMYK_FR.png" alt="ONU Femmes">
+                    </div>
+                </li>
+
+                <!-- Social Media Icons -->
+                <li>
+                    <div class="social-icons">
+                        <a href="#facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Menus footer -->
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#apropos">A Propos</a></li>
+                    <li><a href="#beneficiaires">Bénéficiaires</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#temoignages">Témoignages</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                </ul>
+            </div>
+
+            <!-- Recherche -->
+            <div class="search-container">
+                <input type="text" placeholder="Chercher...">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="footer-copy">
+                <p>COPYRIGHT &copy; 2025 AGCCI Mali.</p>
+            </div>
+            
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

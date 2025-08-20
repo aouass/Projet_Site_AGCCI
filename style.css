@@ -1,0 +1,727 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+body.accueil{
+    /*background-color: #fff; */
+    margin: 0;
+    padding: 0;
+    background-image: url("images/Frame 9.png");
+    background-size: cover;        /* couvre tout l’écran */
+    background-position: center;   /* centre l’image */
+    background-repeat: no-repeat;  /* pas de répétition */
+
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+#projets h2, #temoignages h2, #partenaires h2 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Header */
+header {
+    /*background-color: #fff; */
+    padding: 5px;
+    color: black;
+}
+
+header .logo img {
+    max-width: 100px; 
+    height: auto; /* Pour que l'image garde ses proportions */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    font-size: 20px;
+}
+
+header .menu li {
+    display: inline;
+}
+
+header .menu a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+/* Supprimer le soulignement des liens */
+header nav a {
+    text-decoration: none;
+}
+
+header .menu a:hover {
+    color: #0397D6; /* Change la couleur du texte au survol */
+    transform: scale(1.1); /* Agrandit légèrement le lien pour un effet subtil */
+    font-weight: bold;
+
+}
+
+/* Effet actif au clic */
+header .menu a.active {
+    color: white; /* Change la couleur du texte pour l'élément actif */
+    background-color: #0397D6; /* Fond bleu pour indiquer l'élément actif */
+    padding: 10px 20px; /* Pour un effet visuel */
+    border-radius: 5px; /* Pour arrondir les coins */
+    font-weight: bold; 
+}
+
+/* Pour la transition d'éléments cliqués */
+header .menu a.active:hover {
+    background-color: #0397D6; 
+    transform: none; /* Annule l'effet de zoom sur l'élément actif */
+}
+
+/* Bouton Contactez-nous */
+header .contact-btn {
+    background-color: #0397D6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px; /*Pour que le bouton a une hauteur cohérente avec le menu */
+    font-size: 20px;
+}
+
+/* Pour le responsive */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column; /* Place les éléments les uns sous les autres sur les petits écrans */
+        align-items: flex-start;
+    }
+
+    header .menu {
+        flex-direction: column;
+        gap: 10px; /* Réduire l'espace entre les liens du menu */
+    }
+
+    header .contact-btn {
+        margin-top: 10px; /* Espacement entre le menu et le bouton */
+    }
+}
+
+/* Section Statistiques */
+#statistiques {
+    position: relative;
+    padding: 0px;
+    text-align: center;
+    color: white;
+    
+}
+
+.stats-container {
+    background-image: url('images/PhotoAGCCI\ 1.png'); /* image de fond */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 250px 100px; /* Ajout du padding pour que le contenu ne soit pas serré */
+    border-radius: 15px;
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Superposition sombre pour améliorer la lisibilité */
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.stats {
+    display: flex;
+    justify-content: flex-end; /* Alignement à droite */
+    gap: 25px; /* Espacement entre les cartes */
+    margin-top: 25%;
+}
+
+.stat {
+    background-color: white; /* Fond blanc */
+    color: #333; /* Couleur du texte */
+    padding: 20px;
+    border-radius: 25px 25px 25px 0; /* Coins arrondis uniquement à droite */
+    width: 190px; /* Taille des cartes */
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    display: flex;
+    align-items: center;
+}
+
+.stat i {
+    font-size: 30px; /* Taille de l'icône */
+    margin-right: 5px; /* Espacement entre l'icône et le chiffre */
+    padding: 10px; /* Padding autour de l'icône */
+    background-color: #0397D6; 
+    color: white; /* Couleur de l'icône */
+    border-radius:25px; /* Rendre l'arrière-plan rond */
+}
+
+.stat h2 {
+    font-size: 40px; /* Taille du chiffre */
+    margin-bottom: 10px; /* Espacement sous le chiffre */
+}
+
+.stat p {
+    font-size: 16px; /* Taille du texte */
+    margin-top: auto; /* Force le texte à être au bas de la carte */
+}
+
+/* Section AGCCI Description */
+#agcci-description {
+    color: black; /* Texte noir */
+    padding: 40px 100px; /* Espacement pour la section */
+    text-align: center;
+    margin-top: 5%;
+}
+
+#agcci-description .description-container {
+    max-width: 900px; /* Largeur maximale  */
+    margin: 0 auto; /* Centrer la description */
+}
+
+#agcci-description h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#agcci-description p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* 
+section {
+    margin-bottom: 30px; Espacement entre chaque section 
+}
+    
+*/
+
+/* Section Bénéficiaires */
+
+#beneficiaires .carousel-container {
+    width: 100%;
+    overflow: hidden; /* Cache les éléments hors de la zone visible */
+    position: relative; /* Positionnement relatif pour l'animation */
+    display: flex; 
+}
+
+#beneficiaires .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease; /* Transition douce pour le défilement */
+}
+
+#beneficiaires .card {
+    min-width: calc(100% / 5); /* Afficher 5 cartes à la fois */
+    margin-right: 20px; /* Espace entre les cartes */
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.beneficiaries .card img {
+    width: 100%;
+    height: 200px; /* Hauteur fixe */
+    padding-bottom: 10px;
+    object-fit: cover; /* Couvre l'espace sans déformer l'image */
+    border-radius: 5px; /* Arrondi des coins de l'image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile pour l'effet cadre */
+    transition: transform 0.3s ease; /* Animation douce pour le zoom au survol */
+
+}
+
+.beneficiaries .card img:hover {
+    transform: scale(1.05); /* Agrandissement de l'image au survol */
+}
+
+#beneficiaires {
+    /*background: linear-gradient(to bottom, #ffffff,#f4f7f8, #4ca1af); */
+    padding: 60px 0;
+    color: black;
+    text-align: center;
+    margin-top: -5%; /* Réduction de l'espace entre les sections */
+}
+
+
+#beneficiaires .beneficiaries {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    
+}
+
+#beneficiaires h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Flèches de navigation */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-nav.left {
+    left: -40px; /* Placer la flèche gauche à gauche du titre */
+}
+
+.carousel-nav.right {
+    right: -40px; /* Placer la flèche droite à droite du titre */
+}
+
+.carousel-nav i {
+    font-size: 24px;
+}
+
+/* Cacher les flèches */
+.carousel-nav.hidden {
+    display: none;
+}
+
+.voir-plusBtn {
+    background-color: #0397D6;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Projects Section */
+#projets .projects {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; /* Permet de faire passer les cartes à la ligne suivante si nécessaire */
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    margin: 10px; /* Espacement interne entre les cartes */
+    padding: 20px;
+    width: 350px;  /* Chaque carte prendra 1/3 de la largeur de l'écran, en prenant en compte l'espacement */
+    text-align: left; /* Alignement du texte à gauche */
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Ombre plus marquée pour l'effet 3D */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Effet de survol : déplace la carte légèrement vers le haut */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+}
+
+.project-card img {
+    width: 100%;
+    height: 100px;  /* Augmentation de la hauteur de l'image */
+    object-fit: cover;
+    border-radius: 12px;  /* Donner un effet de cadre arrondi */
+    margin-bottom: 10px;
+
+}
+
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2px;
+    
+}
+
+.project-text {
+    flex: 1;
+}
+
+.project-text h5 {
+    font-size: 14px;  /* Augmentation de la taille de la police pour les titres */
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.project-text p {
+    font-size: 12px;  /* Taille de police augmentée pour plus de lisibilité */
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+button {
+    background-color: #0397D6;
+    padding: 12px 20px;  /* Augmentation de la taille du bouton */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;  /* Taille de police plus grande pour le bouton */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+/* Rendre les cartes responsives */
+@media screen and (max-width: 768px) {
+    .project-card {
+        width: 100%; /* Les cartes prennent toute la largeur sur les petits écrans */
+        margin: 10px 0;
+    }
+
+    .project-content {
+        flex-direction: column; /* Sur les petits écrans, mettre le texte et l'image en colonne */
+        align-items: center;
+    }
+
+    .project-text {
+        text-align: center;
+    }
+
+    .project-card img {
+        margin-bottom: 10px; /* Moins d'espace entre l'image et le texte sur petits écrans */
+    }
+}
+
+/* Testimonials Section */
+#temoignages .testimonials {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    font-style: italic;
+}
+
+/* Section partenaires */
+#partenaires {
+    /*background-color: #003366; */
+    
+}
+
+.partners img {
+    height: 80px;
+    margin: 20px;
+}
+
+#partenaires h2 , #temoignages h2 {
+    color: #fff;
+    
+}
+
+/* Section qui précède le footer */
+#partenaires, #temoignages, #projets, #beneficiaires {
+    margin-bottom: 0; /* Enlève les marges entre les sections et le footer */
+}
+
+
+/* FOOTER */
+footer{
+    position: relative;
+    padding-top: 0;
+}
+
+body.accueil footer {
+    background-color: white;
+}
+
+svg {
+  display: block;
+  transform: rotate(180deg)  scaleX(-1);
+}
+
+/* Contenu du footer */
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-logo img {
+  height: 150px;
+  margin: 5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: left;
+  flex-direction: row;
+  margin-top: 5px;
+  width: 30px;
+}
+
+.social-icons i {
+  color: white;
+}
+
+.social-icons a {
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #0397D6;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #0279b6;
+}
+
+/* Navigation */
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav ul li {
+    margin-bottom: 15px;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #1c1c50;
+  font-size: 20px;
+  transition: color 0.3s ease; 
+}
+
+.footer-nav ul li a:hover {
+  color: #0397D6;
+  font-weight: bold;
+}
+
+/* Recherche */
+.search-container {
+  position: relative;
+  width: 250px;
+  margin-top: 10px;
+  
+}
+
+.search-container input {
+  padding: 10px 10px 10px 35px; /* Ajoute de l'espace à gauche pour l'icône */
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  text-align: left; /* Aligne le texte à gauche */
+  background-color: #f4f7f8;
+}
+
+.search-container input:focus {
+  outline: none;
+  border: 2px solid #0397D6;
+}
+
+/* Icône de recherche à l'intérieur de l'input */
+.search-container i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #555;
+}
+
+/* Copyright */
+.footer-copy {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo-imgs {
+    flex-direction: column;
+  }
+  
+  .footer-nav ul {
+    flex-direction: column;
+  }
+
+  .search-container {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 15px;
+  }
+}
+
+/* Style général pour la page Contact */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+
+}
+
+#contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #black; /* Couleur du titre */
+}
+
+/* Style de la card*/
+.contact-card {
+    /* background-color: #E1A3B7 C96D96; */
+    background-color: #C96D96;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Titre */
+.contact-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: left;
+}
+
+/* Style général du formulaire */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Aligner le nom et l'email sur la même ligne */
+.contact-form .form-inline {
+    display: flex;
+    justify-content: space-between; /* Espace entre les champs */
+    gap: 15px;  /* Espacement entre les champs Nom et Email */
+    width: 100%;
+}
+
+.contact-form .form-inline input {
+    width: 48%; /* Chaque champ prendra environ 48% de la largeur */
+}
+
+/* Style des champs de formulaire */
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%; 
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px; /* Espacement sous chaque champ */
+}
+
+.contact-form .form-group {
+    width: 100%;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Permet de redimensionner la hauteur */
+    height: auto;
+}
+
+/* Bouton d'envoi */
+.contact-form button {
+    background-color: #0397D6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 20%; /* Le bouton prend toute la largeur de la carte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacement entre l'icône et le texte */
+    margin-left: auto; /* Pousse le bouton vers la droite */
+    margin-top: 5px; /* Espacement au-dessus du bouton */
+}
+
+.contact-form button:hover {
+    background-color: #0279b6;
+}
+
+/* Icône dans le bouton */
+.contact-form button i {
+    font-size: 18px;
+}
+
+/* Arrière-plan de la page contact */
+body.contact {
+    background-color: #fff;
+
+}
+
+body.contact footer {
+    background-color: #0279b6;
+    color: white;
+}
