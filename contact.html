@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGCCI Mali</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="contact">
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/Logo_SiteAGCCI.png" alt="Logo AGCCI">
+            </div>
+            <ul class="menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#beneficiaires">Bénéficiaire</a></li>
+                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+            </ul>
+
+            <a href="contact.html">
+                <button class="contact-btn">Contactez-nous</button>
+            </a> <!-- Lien vers la page de contact -->
+        </nav>
+
+    </header>
+
+    <!-- Page Contact -->
+
+   <section id="contact">
+    <h2>Contactez-nous</h2>
+        <div class="contact-card">
+            <!-- Titre -->
+            <p class="contact-description">Envoyez-nous votre message</p>
+
+            <form class="contact-form">
+                <div class="form-group form-inline">
+                    <input type="text" id="name" name="name" placeholder="Nom" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+
+                <!-- Bouton avec icône d'envoi -->
+                <button type="submit" class="submit-btn"> Envoyer
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- SVG pour la forme ondulée -->
+    <div class="wave">
+        <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#0279b6" d="M0,0 C480,150 960,0 1440,150 L1440,0 L0,0 Z"></path>
+        </svg>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer content -->
+        <div class="footer-content">
+            <!-- Contenu du Footer -->
+            <ul>
+                <li>
+                    <div class="footer-logo">
+                        <img src="images/Logo_AGCCI_footer.png" alt="AGCCI Logo">
+                        <img src="images/Logo UNW_White_FR.png" alt="ONU Femmes">
+                    </div>
+                </li>
+
+                <!-- Social Media Icons -->
+                <li>
+                    <div class="social-icons">
+                        <a href="#facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Menus footer -->
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#apropos">A Propos</a></li>
+                    <li><a href="#beneficiaires">Bénéficiaires</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#temoignages">Témoignages</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                </ul>
+            </div>
+
+            <!-- Recherche -->
+            <div class="search-container">
+                <input type="text" placeholder="Chercher...">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="footer-copy">
+                <p>COPYRIGHT &copy; 2025 AGCCI Mali.</p>
+            </div>
+            
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
