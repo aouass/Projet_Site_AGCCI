@@ -5,110 +5,266 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGCCI - Accueil</title>
     <link rel="stylesheet" href="Acceuil.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="Acceuil.js" defer></script>
 </head>
-<body>
+<body class="accueil">
 
     <!-- HEADER -->
     <header>
-        <div class="logo">
-            <img src="Logo_AGCCI.png" alt="AGCCI">
-        </div>
+        
         <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">A Propos</a></li>
-                <li><a href="#">Beneficiaire</a></li>
-                <li><a href="#">Temoignages</a></li>
-                <li><a href="#">Projets</a></li>
-                <li><a href="#">Galerie</a></li>
+            <div class="logo">
+                <img src="Logo_AGCCI.png" alt="AGCCI">
+            </div>
+
+            <ul class="menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#propos">A Propos</a></li>
+                <li><a href="#beneficiaires">Beneficiaire</a></li>
+                <li><a href="#temoignages">Temoignages</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#galerie">Galerie</a></li>
             </ul>
+
+            <a href="contact.html">
+                <button class="contact-btn">Contactez-nous</button>
+            </a> <!-- Lien vers la page de contact -->
+
         </nav>
-        <a href="#" class="btn-contact">Contactez-nous</a>
+        
     </header>
 
-    <!-- SECTION HERO -->
-    <section class="hero">
-        <div class="overlay">
-            <h1>Lorem ipsum dolor</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#" class="btn-primary">Contactez-nous</a>
-        </div>
-        <div class="stats">
-            <div class="stat-card">
-                <h2>04</h2>
-                <p>Cohorts</p>
-            </div>
-            <div class="stat-card">
-                <h2>200</h2>
-                <p>Filles Formées</p>
-            </div>
-            <div class="stat-card">
-                <h2>54</h2>
-                <p>Projets</p>
+    <!-- SECTION STAT -->
+    <section id="statis">
+        <div class="stats-container">
+            <div class="text-overlay">
+                <h1>Notre Impact en Chiffres</h1>
+                <p class="texte">Découvrez l'impact de l'initiative AGCCI qui s'engage activement pour l'autonomisation des jeunes filles africaines dans le domaine des technologies et du codage. Ces statistiques témoignent des progrès accomplis et de notre engagement à combler le fossé numérique.</p>
+
+                <div class="stats">
+                    <div class="stat">
+                        <i class="fas fa-user-graduate"></i> <!-- Icône Cohorts -->
+                        <h2>04</h2>
+                        <p>Cohorts</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-code"></i> <!-- Icône Filles Formées -->
+                        <h2>200</h2>
+                        <p>Filles Formées</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-project-diagram"></i> <!-- Icône Projets -->
+                        <h2>54</h2>
+                        <p>Projets</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- SECTION TEXTE -->
-    <section class="intro">
-        <h2>Lorem ipsum dolor</h2>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <section id="intro">
+
+        <div class="gggg">
+            <h1>AGCCI - African Girls Can Code Initiative</h1>
+            <p>AGCCI, ou "African Girls Can Code Initiative", est une initiative de l'ONU Femmes et de l'Union Africaine, en collaboration avec l'Union Internationale des Télécommunications (UIT), visant à former et autonomiser les jeunes filles africaines dans le domaine des technologies de l'information et de la communication (TIC) et du codage. L'initiative cherche à combler le fossé numérique entre les genres en Afrique et à encourager les jeunes filles à envisager des carrières dans les TIC.</p>
+        </div>
+
     </section>
 
     <!-- SECTION BENEFICIAIRES -->
-    <section class="beneficiaires">
-        <h2>Nos Beneficiaires</h2>
-        <div class="carousel" id="beneficiaires-carousel">
-            <div class="card">
-                <div class="img-placeholder"></div>
-                <h3>Aminata Teguete</h3>
-                <p>Beneficiaire</p>
-                <span>2023</span>
+    <section id="beneficiaires">
+
+        <h2 class="benef">Nos Beneficiaires</h2>
+
+        <div class="carousels" id="beneficiaires-carousel">
+            <!-- Les deux boutons regroupés -->
+            <div class="carousel-buttons">
+                <button class="prev" id="prevBtn">&#10094;</button>
+                <button class="next" id="nextBtn">&#10095;</button>
             </div>
-            <div class="card">
-                <div class="img-placeholder"></div>
-                <h3>Lalla Camara</h3>
-                <p>Beneficiaire</p>
-                <span>2023</span>
+            <!-- <button class="prev">&#10094;</button> 
+            <button class="next">&#10095;</button> -->
+
+            <div class="carousel-container">
+                
+
+                <div class="card">
+                    <img src="Snapchat-1475356462.jpg" alt="Aoua Sow">
+                    <h4>Aoua Sow</h4>
+                    <p class="couleur">Beneficiaire</p>
+                    <span>2023</span>
+                </div>
+
+                <div class="card">
+                    <img src="Snapchat-1475356462.jpg" alt="Mah Sanogo">
+                    <h4>Mah Rokiatou Sanogo</h4>
+                    <p class="couleur">Beneficiaire</p>
+                    <span>2023</span>
+                </div>
+
+                <div class="card">
+                    <img src="Snapchat-1475356462.jpg" alt="Aminata Teguete">
+                    <h4>Aminata Teguete</h4>
+                    <p class="couleur">Beneficiaire</p>
+                    <span>2023</span>
+                </div>
+
+                <div class="card">
+                    <img src="Snapchat-1475356462.jpg" alt="Lalla Camara">
+                    <h4>Lalla Camara</h4>
+                    <p class="couleur">Beneficiaire</p>
+                    <span>2023</span>
+                </div>
+
+               <div class="card">
+                    <img src="Snapchat-1475356462.jpg" alt="Lalla Camara">
+                    <h4>Lalla Camara</h4>
+                    <p class="couleur">Beneficiaire</p>
+                    <span>2023</span>
+                </div>
+
             </div>
-            <div class="card">
-                <div class="img-placeholder"></div>
-                <h3>Fatoumata Coulibaly</h3>
-                <p>Beneficiaire</p>
-                <span>2025</span>
-            </div>
+            
+
         </div>
-        <a href="#" class="btn-primary">Voir Plus</a>
+
+         <button class="bouton">Voir Plus</button>
+
     </section>
 
     <!-- SECTION PROJETS -->
-    <section class="projets">
+    <section id="projets">
         <h2>Projets Réalisés</h2>
+
         <div class="carousel" id="projets-carousel">
-            <div class="card">
-                <div class="img-placeholder"></div>
-                <h3>Nom du Projet</h3>
-                <p><em>Nom Porteuse Projet</em></p>
-                <p>Description</p>
-                <a href="#" class="btn-primary">Savoir Plus</a>
+
+            <div class="project-card">
+
+                <div class="project-content">
+
+                    <div class="project-text">
+                        <h5>Application Mobile pour l'Autonomisation des Femmes</h5>
+                        <p><strong>Porteuse Projet :</strong> Aoua Sow</p>
+                        <p>Développement d'une application mobile pour permettre aux femmes rurales d'accéder à des ressources éducatives et à des services de microfinance, renforçant ainsi leur autonomie.</p>
+                        <button class="btn-savoir-plus">Savoir Plus</button>
+                    </div>
+
+                    <div class="project-image">
+                        <img src="Snapchat-1475356462.jpg" alt="Application Mobile Autonomisation">
+                    </div>
+
+                </div>
+
             </div>
+
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-text">
+                        <h5>Plateforme d'Apprentissage en Ligne pour les Filles en Afrique</h5>
+                        <p><strong>Porteuse Projet :</strong> Mah Rokiatou Sanogo</p>
+                        <p>Création d'une plateforme d'apprentissage en ligne axée sur les compétences numériques, permettant aux filles africaines de développer des compétences en codage et en entrepreneuriat.</p>
+                        <button class="btn-savoir-plus">Savoir Plus</button>
+                    </div>
+                    <div class="project-image">
+                        <img src="Snapchat-1475356462.jpg" alt="Plateforme d'Apprentissage">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-text">
+                        <h5>Innovation en Énergie Solaire pour les Communautés Rurales</h5>
+                        <p><strong>Porteuse Projet :</strong> Aminata Teguete</p>
+                        <p>Installation de panneaux solaires dans les villages isolés pour fournir de l'énergie durable aux maisons, écoles et cliniques locales.</p>
+                        <button class="btn-savoir-plus">Savoir Plus</button>
+                    </div>
+                    <div class="project-image">
+                        <img src="Snapchat-1475356462.jpg" alt="Énergie Solaire">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- SECTION TEMOIGNAGES -->
-    <section class="temoignages">
-        <h2>Temoignages</h2>
-        <div class="testimonial">
-            <h3>Nom Prenom</h3>
-            <p class="statut">Statut</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <section id="temoignages">
+
+       
+
+        <div class="testimonials">
+             <h2 class="tem">Temoignages</h2>
+             
+            <div class="container">
+                <div class="slider">
+                    <!-- Carte 1 -->
+                    <div class="cards active">
+                        <div class="header">
+                            <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                                <div class="info">
+                                    <h3>Aminata Teguete</h3>
+                                    <p class="statut">Bénéficiaire</p>
+                                </div>
+                        </div>
+                            <p class="description">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                    </div>
+
+                    <!-- Carte 2 -->
+                    <div class="cards">
+                        <div class="header">
+                            <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                            <div class="info">
+                                <h3>Lalla Camara</h3>
+                                <p class="statut">Bénéficiaire</p>
+                            </div>
+                        </div>
+                        <p class="description">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+
+                    <!-- Carte 3 -->
+                    <div class="cards">
+                        <div class="header">
+                            <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                            <div class="info">
+                                <h3>Fatoumata Diallo</h3>
+                                <p class="statut">Bénéficiaire</p>
+                            </div>
+                        </div>
+                        <p class="description">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    
+
+                    <!-- Les points de navigation -->
+                    <div class="dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+
     </section>
 
     <!-- SECTION PARTENAIRES -->
-    <section class="partenaires">
+    <section id="partenaires">
+
         <h2>Nos Partenaires</h2>
+
         <div class="logos">
             <img src="Logo ONUFEMME.png" alt="ONU Femmes">
             <img src="agetic logo 1.png" alt="AGETIC">
@@ -117,6 +273,7 @@
             <img src="Union Africaine 1.png" alt="Union Africaine">
             <img src="ITU_logo 1.png" alt="ITU">
         </div>
+
     </section>
 
     <div class="wave">
@@ -128,9 +285,9 @@
     <!-- FOOTER -->
     <footer>
         
-        <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+        <!-- <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
             <path fill="#ffffff" d="M0,10 C400,0 1040,80 1440,20 L1440,0 L0,0 Z"></path>
-        </svg>
+        </svg> -->
         
 
         <div class="footer-content">
@@ -146,32 +303,37 @@
                 <!-- Réseaux sociaux -->
                  <li>
                     <div class="social-icons">
-                        <a href="#"><img src="facebook.png" ></a>
-                        <a href="#"><img src="linkedin.png" ></a>
-                        <a href="#"><img src="globe.png" ></a>
+                        <a href="#facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#twitter" target="_blank"><i class="fab fa-twitter"></i></a>
                     </div>
                 </li>
             </ul>
 
             <!-- Liens -->
             <div class="footer-links">
-                <h3>A Propos</h3>
+                <!-- <h3>A Propos</h3> -->
                 <ul>
-                    <li><a href="#">Beneficiaires</a></li>
-                    <li><a href="#">Projets</a></li>
-                    <li><a href="#">Temoignages</a></li>
-                    <li><a href="#">Galerie Photo</a></li>
+                    <li><a href="#apropos">A Propos</a></li>
+                    <li><a href="#beneficiaires">Bénéficiaires</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#temoignages">Témoignages</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
                 </ul>
             </div>
 
             <!-- Recherche -->
             <div class="footer-search">
-            <input type="text" placeholder="Chercher...">
-            <button>🔍</button>
+                <input type="text" placeholder="Chercher...">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="footer-copy">
+                 <p class="copyright">COPYRIGHT @ AGCCI MALI</p>
             </div>
         </div>
 
-        <p class="copyright">COPYRIGHT @ AGCCI MALI</p>
+       
     </footer>
 
 
