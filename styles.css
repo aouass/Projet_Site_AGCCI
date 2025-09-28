@@ -1,0 +1,229 @@
+:root {
+  --primary-color: #0a25ba;
+  --primary-color-dark: #0a25ba;
+  --text-dark: #00000;
+  --text-light: #ffff;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Lato regular";
+}
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+body {
+  font-family: "lato regular" sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+.navbar-brand img {
+  height: 70px; 
+  max-height: 70px;
+}
+
+
+.offcanvas-title img {
+  height: 90px;
+  max-height: 70px;
+}
+
+/* Liens de navigation */
+.nav-link {
+  font-weight: 500;
+  color: black;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #0a25ba;
+}
+
+/* Bouton Contact */
+.contact {
+  background: #0a25ba;
+  color: #fff !important;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.contact:hover {
+  background: #0075b5;
+}
+
+/* HEADER */
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+.hero-section {
+  padding: 4rem 0;
+}
+
+h1 span {
+  color: #0a25ba;
+}
+
+/* Bouton personnalisé */
+.btn-primary-custom {
+  background-color: #0a25ba;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: #3a56c9;
+}
+
+
+@media (min-width: 768px) {
+  .header__container {
+    grid-template-columns: 1fr 1fr; 
+  }
+}
+
+/* FOOTER */
+footer {
+  margin-top: 50px;
+  background: #0c5b95;
+  color: #fff;
+}
+footer img {
+  max-width: 100px;
+  margin-bottom: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #fff;
+  color: #0c5b95;
+  margin-right: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.social-icons a:hover {
+  background: #ddd;
+  color: #0c5b95;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  background: #0b4a7b;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.search-box input {
+  border-radius: 8px 0 0 8px;
+  border: none;
+  padding: 10px;
+  width: 70%;
+}
+
+.search-box button {
+  border-radius: 0 8px 8px 0;
+  border: none;
+  background: #fff;
+  color: #0c5b95;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.search-box button:hover {
+  background: #ddd;
+  color: #0c5b95;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE DESIGN - MOBILE ≤ 768px */
+@media (max-width: 768px) {
+  /* Header */
+  .header__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+    padding-block: 5rem 1.5rem;
+  }
+
+  .header__content h1 {
+    font-size: 2rem;
+  }
+
+  .header__image {
+    max-width: 350px;
+  }
+
+  /* Bouton */
+  .contact {
+    max-width: 200px;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Barre de recherche */
+  .search-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .search-box input {
+    width: 65%;
+    font-size: 0.9rem;
+  }
+
+  .search-box button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  footer img {
+    max-width: 80px;
+  }
+}

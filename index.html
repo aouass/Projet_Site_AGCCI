@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bénéficiaires</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand me-auto" href="#">
+          <img src="assets/LOGO.png" alt="Logo" />
+        </a>
+
+        <!-- Offcanvas -->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img src="assets/LOGO.png" alt="Logo" />
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 active" aria-current="page" href="#"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Bénéficiaires</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Témoignages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Projets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Galerie</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bouton Contact -->
+        <a href="#" class="contact">Contactez-nous</a>
+
+        <!-- Bouton Burger -->
+        <button
+          class="navbar-toggler ms-2"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- HEADER -->
+    <section class="container hero-section mt-5">
+      <div class="row align-items-center">
+        
+        <!-- Texte Hero -->
+        <div class="col-lg-6 hero-text text-center text-lg-start">
+          <h1 class="fs-1 fw-bold">VENEZ A LA <br/><span>RENCONTRE</span> DE NOS BENEFICIAIRES</h1>
+          <button class="btn btn-primary-custom mt-3">voir la liste</button>
+        </div>
+        
+        <!-- Image Hero -->
+        <div class="col-lg-6 text-center mt-4 mt-lg-0">
+          <img src="assets/header.png" alt="image" class="img-fluid">
+        </div>
+    
+      </div>
+    </section>
+    <!-- LISTE BENEFICIAIRES -->
+    <section id="liste" class="beneficiaires position-relative py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Liste des Bénéficiaires</h2>
+
+        <div class="row align-items-center mb-5">
+          <div class="col-md-4 text-center">
+            <img
+              src="assets/rebelle.jfif"
+              class="rounded img-fluid shadow"
+              alt="Photo"
+            />
+          </div>
+          <div class="col-md-8">
+            <h3>MOUNE AWA TOURE</h3>
+            <h4>Cohorte 1</h4>
+            <p>
+              <em
+                >Licence en biologie médicale et assistante pharmacie;Formation
+                en anglais niveau avancé
+              </em>
+            </p>
+            <p>
+              J'aime l'informatique surtout la programmation et j'accepte
+              d'apprendre chaque jour.
+            </p>
+          </div>
+        </div>
+
+        <div class="row align-items-center mb-5 flex-md-row-reverse">
+          <div class="col-md-4 text-center">
+            <img
+              src="assets/rebelle.jfif"
+              class="rounded img-fluid shadow"
+              alt="Photo"
+            />
+          </div>
+          <div class="col-md-8">
+            <h3>Nom Prénom</h3>
+            <p><em>Fonction</em></p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              viverra eget justo et pharetra. Fusce ac elit gravida, maximus mi
+              ac, inter nisl, sit amet facilisis tellus accumsan eget. Nulla nec
+              blandit massa. Aliquam pellentesque pharetra lectus a condimentum.
+            </p>
+          </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+          <div class="col-md-4 text-center">
+            <img
+              src="assets/rebelle.jfif"
+              class="rounded img-fluid shadow"
+              alt="Photo"
+            />
+          </div>
+          <div class="col-md-8">
+            <h3>Nom Prénom</h3>
+            <p><em>Fonction</em></p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel
+              accumsan elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4 text-center text-md-start mb-4">
+            <img src="assets/LOGO.png" alt="Logo" />
+            <img src="assets/Logo UNW_forALL_White_FR.png" alt="Logo" />
+            <div class="social-icons">
+              <a href="https://www.facebook.com" target="_blank">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://www.google.com" target="_blank">
+                <i class="bi bi-google"></i>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <h5 class="fw-bold">A Propos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Bénéficiaires</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Projets</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Témoignages</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Galerie Photo</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Colonne droite -->
+          <div class="col-md-4 text-center text-md-end">
+            <form
+              class="d-flex justify-content-center justify-content-md-end search-box"
+              id="searchForm"
+            >
+              <input type="text" id="searchInput" placeholder="Chercher..." />
+              <button type="submit">🔍</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">COPYRIGHT © AGCCI MALI</div>
+    </footer>
+    <!-- Bootstrap JS + Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS recherche -->
+    <script>
+      document
+        .getElementById("searchForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          let query = document.getElementById("searchInput").value;
+          if (query) {
+            alert("Vous avez cherché : " + query);
+          }
+        });
+    </script>
+  </body>
+</html>
