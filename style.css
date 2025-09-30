@@ -75,9 +75,9 @@ background-color: var(-secondary-color);
 .cta-button {
     background-color: var(-primary-color);
     color: var(-text-light);
-    background-color: #1b1f6a;
+    background-color: #6bceecc5;
     padding: 0.5rem 1.5rem;
-    border-radius: 20px;
+    border-radius: 10px;
     font-weight: 700;
     transition: background-color 0.3s;
 }
@@ -96,8 +96,8 @@ background-color: var(-secondary-color);
     align-items: center;
     justify-content: flex-start;
     text-align: left;
-
     padding-left: 10%;
+    margin-bottom: 40px;
 }
 .hero-section::before {
     content: "";
@@ -134,6 +134,15 @@ background-color: var(-secondary-color);
 }
 .cta-secondary:hover {
     background-color: #c8237e;
+}
+/*section objectifs*/
+.objectifs {
+    height: 400px;
+    margin-bottom: 40px;
+}
+.objectifs h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 /*Conteneur de cartes*/
 .cards {
@@ -281,9 +290,11 @@ box-shadow: 0 0 0 2px #1b7ce2;}
 }
 /*STATS*/
 .stats {
+    height: 400px;
     margin: 60px;
     text-align: center;
 }
+
 .stats-title {
     width: "300px";
     height: 50px;
