@@ -627,7 +627,7 @@ footer ul li a {
 #contact h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #black; /* Couleur du titre */
+    color: black; /* Couleur du titre */
 }
 
 /* Style de la card*/
@@ -716,10 +716,7 @@ footer ul li a {
 }
 
 /* Arrière-plan de la page contact */
-body.contact {
-    background-color: #fff;
 
-}
 
 body.contact footer {
     background-color: #0279b6;
